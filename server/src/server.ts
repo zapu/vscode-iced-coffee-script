@@ -76,7 +76,12 @@ connection.onInitialized(() => {
 
 connection.onDocumentSymbol(params => {
 	if (/file:\/\//.test(params.textDocument.uri)) {
-		const src = fs.readFileSync(Uri.parse(params.textDocument.uri).fsPath, 'utf-8');
+		const filepath = Uri.parse(params.textDocument.uri).fsPath;
+		if (!fs.existsSync(filepath)) {
+			// File is gone.
+			return [];
+		}
+		const src = fs.readFileSync(filepath, 'utf-8');
 		try {
 			return documentSymbol(src, connection) as SymbolInformation[];
 		} catch(e) {
