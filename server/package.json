@@ -1,18 +1,14 @@
 {
-	"name": "lsp-sample-server",
-	"description": "Example implementation of a language server in node.",
+	"name": "vscode-iced-coffee-script-server",
+	"description": "Server part of IcedCoffeeScript VSCode",
 	"version": "1.0.0",
-	"author": "Microsoft Corporation",
+	"author": "Michał Zochniak",
 	"license": "MIT",
 	"engines": {
 		"node": "*"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-extension-samples"
-	},
 	"dependencies": {
-		"iced-coffee-script": "^108.0.11",
+		"iced-coffee-script-3": "^112.8.0",
 		"vscode-languageserver": "^4.1.3"
 	},
 	"scripts": {}

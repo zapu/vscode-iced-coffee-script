@@ -23,7 +23,7 @@ import {
 import Uri from 'vscode-uri';
 import * as fs from 'fs';
 const documentSymbol = require('./iced_walk').documentSymbol;
-import * as IcedCoffeeScript from 'iced-coffee-script';
+import * as IcedCoffeeScript from 'iced-coffee-script-3';
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.

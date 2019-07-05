@@ -1,7 +1,7 @@
 default: build
 all: build
 
-ICED=node_modules/.bin/iced
+ICED=node_modules/.bin/iced3
 BUILD_STAMP=build-stamp
 
 out/iced_walk.js : src/iced_walk.iced
@@ -18,5 +18,3 @@ clean:
 	find out -type f -name *.js.map -exec rm {} \;
 
 build: $(BUILD_STAMP)
-
-.PHONY : iced_files ts_files
