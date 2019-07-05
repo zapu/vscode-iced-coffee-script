@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"iced-coffee-script": "^108.0.11",
-		"vscode": "^1.1.21",
+		"vscode": "^1.1.35",
 		"vscode-languageclient": "^4.1.4",
 		"vscode-languageserver": "^5.0.3"
 	}
